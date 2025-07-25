@@ -2,7 +2,7 @@
     <div class="loading-app-container">
         <a-result>
             <template #title>
-                <span :style="{ color: '#7676e3' }">
+                <span :style="{ color: '#1890ff' }">
                     {{ $t("messages.loading_app_message") }}
                 </span>
             </template>
@@ -10,7 +10,7 @@
                 <img style="width: 150px" :src="appSetting.light_logo_url" />
             </template>
             <template #extra>
-                <SyncOutlined :style="{ fontSize: '38px', color: '#5254cf' }" spin />
+                <SyncOutlined :style="{ fontSize: '38px', color: '#1890ff' }" spin />
             </template>
         </a-result>
     </div>

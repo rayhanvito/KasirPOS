@@ -1,57 +1,31 @@
 <template>
     <a-layout-sider
         :width="240"
-        :style="{
-            margin: '0 0 0 0',
-            overflowY: 'auto',
-            position: 'fixed',
-            paddingTop: '8px',
-            zIndex: 998,
-        }"
+        :breakpoint="'lg'"
+        :collapsedWidth="0"
         :trigger="null"
         :collapsed="menuCollapsed"
         :theme="appSetting.left_sidebar_theme"
         class="sidebar-right-border"
+        :style="{
+            overflowY: 'auto',
+            paddingTop: '8px',
+        }"
     >
-        <div v-if="menuCollapsed" class="logo">
+        <div class="logo">
             <img
                 :style="{
                     height: '32px',
                 }"
                 :src="
-                    appSetting.left_sidebar_theme == 'dark'
-                        ? appSetting.small_dark_logo_url
-                        : appSetting.small_light_logo_url
+                    menuCollapsed
+                        ? (appSetting.left_sidebar_theme == 'dark'
+                            ? appSetting.small_dark_logo_url
+                            : appSetting.small_light_logo_url)
+                        : (appSetting.left_sidebar_theme == 'dark'
+                            ? appSetting.dark_logo_url
+                            : appSetting.light_logo_url)
                 "
-            />
-        </div>
-        <div v-else>
-            <img
-                :style="{
-                    width: '150px',
-                    height: '53px',
-                    paddingLeft: appSetting.rtl ? '0px' : '30px',
-                    paddingRight: appSetting.rtl ? '30px' : '0px',
-                    paddingTop: '5px',
-                    paddingBottom: '20px',
-                    marginLeft: appSetting.rtl ? '0px' : '10px',
-                    marginRight: appSetting.rtl ? '10px' : '0px',
-                }"
-                :src="
-                    appSetting.left_sidebar_theme == 'dark'
-                        ? appSetting.dark_logo_url
-                        : appSetting.light_logo_url
-                "
-            />
-            <CloseOutlined
-                v-if="innerWidth <= 991"
-                :style="{
-                    marginLeft: appSetting.rtl ? '0px' : '45px',
-                    marginRight: appSetting.rtl ? '45px' : '0px',
-                    verticalAlign: 'super',
-                    color: appSetting.left_sidebar_theme == 'dark' ? '#fff' : '#000000',
-                }"
-                @click="menuSelected"
             />
         </div>
 

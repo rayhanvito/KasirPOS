@@ -8,7 +8,7 @@
     <div class="dashboard-page-content-container">
         <UpdateAppAlert />
 
-        <a-row :gutter="[8, 8]" class="mt-30 mb-10">
+        <a-row :gutter="[8, 8]" class="mt-32 mb-16">
             <a-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
                 <DateRangePicker
                     ref="serachDateRangePicker"
@@ -19,10 +19,10 @@
             </a-col>
         </a-row>
 
-        <div class="mt-30 mb-20">
-            <a-row :gutter="[15, 15]">
+        <div class="mt-30 mb-24">
+            <a-row :gutter="[16, 16]">
                 <a-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
-                    <StateWidget>
+                    <StateWidget bgColor="#007BFF">
                         <template #image>
                             <LineChartOutlined style="color: #fff; font-size: 24px" />
                         </template>
@@ -40,7 +40,7 @@
                 </a-col>
 
                 <a-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
-                    <StateWidget>
+                    <StateWidget bgColor="#007BFF">
                         <template #image>
                             <ShoppingOutlined style="color: #fff; font-size: 24px" />
                         </template>
@@ -58,7 +58,7 @@
                 </a-col>
 
                 <a-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
-                    <StateWidget>
+                    <StateWidget bgColor="#007BFF">
                         <template #image>
                             <TagOutlined style="color: #fff; font-size: 24px" />
                         </template>
@@ -76,7 +76,7 @@
                 </a-col>
 
                 <a-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
-                    <StateWidget>
+                    <StateWidget bgColor="#007BFF">
                         <template #image>
                             <BankOutlined style="color: #fff; font-size: 24px" />
                         </template>
@@ -95,7 +95,7 @@
             </a-row>
         </div>
 
-        <a-row :gutter="[18, 18]" class="mt-30 mb-20">
+        <a-row :gutter="[16, 16]" class="mt-30 mb-24">
             <a-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
                 <a-card :title="$t('dashboard.top_selling_product')">
                     <TopProducts :data="responseData" />
@@ -112,7 +112,7 @@
                         #extra
                     >
                         <a-button
-                            class="mt-10"
+                            class="mt-8"
                             type="link"
                             @click="
                                 $router.push({
@@ -129,7 +129,7 @@
         </a-row>
 
         <a-row
-            class="mt-30 mb-20"
+            class="mt-32 mb-24"
             v-if="
                 (permsArray.includes('purchases_view') ||
                     permsArray.includes('sales_view') ||
@@ -259,7 +259,7 @@
             </a-col>
         </a-row>
 
-        <a-row :gutter="[18, 18]" class="mt-30 mb-20">
+        <a-row :gutter="[16, 16]" class="mt-30 mb-24">
             <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
                 <a-card :title="$t('payments.payments')">
                     <PaymentsChart :data="responseData" />
@@ -271,7 +271,7 @@
                         #extra
                     >
                         <a-button
-                            class="mt-10"
+                            class="mt-8"
                             type="link"
                             @click="
                                 $router.push({ name: 'admin.reports.payments.index' })
@@ -285,7 +285,7 @@
             </a-col>
         </a-row>
 
-        <a-row :gutter="[18, 18]" class="mt-30 mb-20">
+        <a-row :gutter="[16, 16]" class="mt-30 mb-24">
             <a-col :xs="24" :sm="24" :md="12" :lg="16" :xl="16">
                 <a-card
                     :title="$t('menu.stock_alert')"
@@ -317,7 +317,7 @@
                         #extra
                     >
                         <a-button
-                            class="mt-10"
+                            class="mt-8"
                             type="link"
                             @click="$router.push({ name: 'admin.reports.stock.index' })"
                         >
@@ -358,7 +358,7 @@
                         #extra
                     >
                         <a-button
-                            class="mt-10"
+                            class="mt-8"
                             type="link"
                             @click="$router.push({ name: 'admin.reports.users.index' })"
                         >
@@ -519,33 +519,33 @@ export default {
 }
 
 .ant-card-head-title {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .stock-history-stats {
-    margin-right: 20px;
+    margin-right: 24px;
 
     .sales {
         background: #e6f2ed;
-        padding: 15px;
+        padding: 16px;
         border-radius: 10px;
     }
 
     .sales-returns {
         background: #ffefed;
-        padding: 15px;
+        padding: 16px;
         border-radius: 10px;
     }
 
     .purchases {
         background: #eff3fe;
-        padding: 15px;
+        padding: 16px;
         border-radius: 10px;
     }
 
     .purchase-returns {
         background: #f5f0df;
-        padding: 15px;
+        padding: 16px;
         border-radius: 10px;
     }
 }

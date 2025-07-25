@@ -6,8 +6,7 @@ const Div = Styled('div', props)`
 `;
 
 const MainArea = Styled('div', props)`
-	${({ innerWidth, collapsed, isRtl }) => isRtl ? (innerWidth <= 991 ? 'margin-right: 2px;' : (collapsed ? 'margin-right: 80px;' : 'margin-right: 240px;')) : ''}
-	${({ innerWidth, collapsed, isRtl }) => !isRtl ? (innerWidth <= 991 ? 'margin-left: 2px;' : (collapsed ? 'margin-left: 80px;' : 'margin-left: 240px;')) : ''}
+	${({ innerWidth, collapsed, isRtl }) => innerWidth <= 991 ? (isRtl ? 'margin-right: 0px;' : 'margin-left: 0px;') : ''}
 	min-height: 100vh;
 `;
 
