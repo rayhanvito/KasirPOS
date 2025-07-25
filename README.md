@@ -1,62 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Aplikasi Kasir
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi Kasir ini adalah sistem Point of Sale (POS) yang komprehensif, dirancang untuk membantu bisnis mengelola penjualan, inventaris, dan pelanggan dengan efisien. Dibangun dengan Laravel untuk backend dan Vue.js untuk frontend, aplikasi ini menawarkan antarmuka yang intuitif dan fitur-fitur penting untuk operasional harian.
 
-## About Laravel
+## Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+*   **Manajemen Penjualan (POS)**: Antarmuka kasir yang cepat dan mudah digunakan untuk transaksi penjualan.
+*   **Manajemen Produk**: Tambah, edit, dan kelola produk dengan detail lengkap termasuk harga, stok, dan kategori.
+*   **Manajemen Stok/Inventaris**: Lacak jumlah stok secara real-time, peringatan stok rendah, dan penyesuaian stok.
+*   **Manajemen Pelanggan & Pemasok**: Kelola data pelanggan dan pemasok, termasuk riwayat transaksi.
+*   **Laporan Komprehensif**: Laporan penjualan, pembelian, stok, dan keuangan untuk analisis bisnis.
+*   **Manajemen Pengeluaran**: Catat dan kelola pengeluaran bisnis.
+*   **Responsif**: Tampilan yang dioptimalkan untuk berbagai perangkat (desktop, tablet, mobile).
+*   **Sistem Pengguna & Peran**: Kelola pengguna dengan peran dan izin yang berbeda.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Persyaratan Sistem
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Pastikan server Anda memenuhi persyaratan berikut:
 
-## Learning Laravel
+*   PHP >= 8.1
+*   Composer
+*   Node.js (disarankan versi LTS)
+*   NPM atau Yarn
+*   MySQL (atau database lain yang didukung Laravel)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instalasi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Ikuti langkah-langkah di bawah ini untuk menginstal dan menjalankan aplikasi Kasir di lingkungan lokal Anda:
 
-## Laravel Sponsors
+1.  **Kloning Repositori:**
+    ```bash
+    git clone https://github.com/rayhanvito/KasirPOS.git
+    cd KasirPOS
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+2.  **Instal Dependensi Composer:**
+    ```bash
+    composer install
+    ```
 
-### Premium Partners
+3.  **Konfigurasi Environment:**
+    *   Buat salinan file `.env.example` dan ganti namanya menjadi `.env`:
+        ```bash
+        cp .env.example .env
+        ```
+    *   Buka file `.env` dan konfigurasikan pengaturan database Anda (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+    *   Juga, pastikan `APP_URL` diatur dengan benar.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+4.  **Buat Kunci Aplikasi:**
+    ```bash
+    php artisan key:generate
+    ```
 
-## Contributing
+5.  **Migrasi Database dan Seeder (Opsional, untuk data awal):**
+    ```bash
+    php artisan migrate --seed
+    ```
+    Jika Anda ingin memulai dengan database kosong, cukup jalankan `php artisan migrate`.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6.  **Instal Dependensi Node.js:**
+    ```bash
+    npm install
+    # atau jika Anda menggunakan yarn
+    # yarn install
+    ```
 
-## Code of Conduct
+7.  **Kompilasi Aset Frontend:**
+    ```bash
+    npm run build
+    ```
+    Untuk pengembangan, Anda bisa menggunakan:
+    ```bash
+    npm run dev
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+8.  **Jalankan Server Pengembangan Laravel:**
+    ```bash
+    php artisan serve
+    ```
 
-## Security Vulnerabilities
+9.  **Akses Aplikasi:**
+    Buka browser Anda dan kunjungi `http://localhost:8000` (atau URL yang dikonfigurasi di `APP_URL` Anda).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    *   **Login Default (jika menggunakan `--seed`):**
+        *   Email: `admin@example.com`
+        *   Password: `password`
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
