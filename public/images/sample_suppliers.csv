@@ -1,0 +1,2 @@
+name,email,phone,billing_address,shipping_address,opening_balance,opening_balance_type,credit_period,credit_limit
+Demo Supplier,demosupplier@gmail.com,977777777,india,india,1000,receive,,

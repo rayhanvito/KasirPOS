@@ -1,0 +1,48 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "@stripe/stripe-js": "^1.42.1",
+        "ant-design-vue": "^4.0.0",
+        "axios": "^0.23.0",
+        "chart.js": "^3.6.0",
+        "dayjs": "^1.10.7",
+        "jsbarcode": "^3.11.5",
+        "jspdf": "^2.5.1",
+        "jspdf-autotable": "^3.5.23",
+        "lodash-es": "^4.17.21",
+        "moment": "^2.29.1",
+        "resolve-url-loader": "^4.0.0",
+        "vue": "^3.2.20",
+        "vue-chart-3": "^0.5.8",
+        "vue-i18n": "^9.2.0-beta.32",
+        "vue-router": "^4.0.12",
+        "vue-scrollto": "^2.20.0",
+        "vue-template-compiler": "^2.6.14",
+        "vue3-colorpicker": "^2.0.4",
+        "vue3-perfect-scrollbar": "^1.5.5",
+        "vue3-print-nb": "^0.1.4",
+        "vue3-styled-components": "^1.2.1",
+        "vuex": "^4.0.2",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "@originjs/vite-plugin-commonjs": "^1.0.3",
+        "@vitejs/plugin-vue": "^4.2.3",
+        "compression": "^1.7.4",
+        "laravel-mix": "^6.0.34",
+        "laravel-vite-plugin": "^0.7.8",
+        "less": "^4.1.2",
+        "less-loader": "^10.2.0",
+        "postcss": "^8.3.11",
+        "sass": "^1.43.3",
+        "sass-loader": "^12.2.0",
+        "unplugin-vue-components": "^0.25.1",
+        "vite": "^4.3.9",
+        "vue-loader": "^16.8.3",
+        "vue-stripe-js": "^1.0.1"
+    }
+}
