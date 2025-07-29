@@ -1,4 +1,4 @@
-![NOJ POS Dashboard](https://user-images.githubusercontent.com/your-image-path-here.png) <!-- Ganti dengan link file image jika sudah di-upload ke repo atau gunakan format lokal jika di repo -->
+![NOJ POS Dashboard](Home.png) <!-- Ganti dengan link file image jika sudah di-upload ke repo atau gunakan format lokal jika di repo -->
 
 # NOJ POS - Solusi Point of Sale & ERP Bisnis Terlengkap
 
