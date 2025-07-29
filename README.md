@@ -1,64 +1,152 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+![NOJ POS Dashboard](https://user-images.githubusercontent.com/your-image-path-here.png) <!-- Ganti dengan link file image jika sudah di-upload ke repo atau gunakan format lokal jika di repo -->
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# NOJ POS - Solusi Point of Sale & ERP Bisnis Terlengkap
 
-## About Laravel
+**NOJ POS** adalah platform Point of Sale (POS) dan ERP bisnis serba bisa yang dibangun dengan **Laravel 11**. Dirancang untuk mendukung UMKM hingga perusahaan berkembang, NOJ POS mengintegrasikan pengelolaan penjualan, akuntansi, HRM, CRM, inventori, dan proyek dalam satu aplikasi modern dan mudah digunakan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Dashboard
+- Dashboard komprehensif berisi data bisnis utama
+- Akses cepat ke proyek, invoice, pembayaran, kontrak, dan laporan
+- Visualisasi status proyek dalam diagram pie
 
-## Learning Laravel
+### Manajemen Staf & User
+- Kelola data karyawan dan klien
+- Penugasan peran & hak akses multi-user
+- Filter berdasarkan departemen dan jabatan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### HRM & Payroll
+- Absensi, cuti, libur, meeting, dan aset perusahaan
+- Pengelolaan penghargaan, promosi, mutasi, keluhan, dan kebijakan perusahaan
+- Modul pelatihan & penilaian kinerja karyawan
+- Pengaturan gaji dan pembuatan payslip massal
+- Indikator kinerja, appraisal, dan pelacakan tujuan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Komunikasi & Kolaborasi
+- Chat internal untuk komunikasi tim & user
+- Modul kontrak dengan dukungan tanda tangan digital
+- Event & notice board untuk jadwal dan pengumuman
 
-## Laravel Sponsors
+### Penjualan & Pre-Sales
+- Manajemen lead & deal (view Kanban & List)
+- Pembuatan dan pelacakan estimasi
+- Kelola invoice, pembayaran, pengeluaran, dan credit note
+- Reminder pembayaran & opsi cetak invoice
+- QR code untuk proposal, invoice, dan bill
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Manajemen Proyek
+- View Kanban & List untuk proyek & tugas
+- Penugasan tugas, checklist, milestone, komentar, timesheet, dan anggaran
+- Laporan proyek & duplikasi modul proyek
+- Aplikasi desktop untuk pelacakan waktu & screenshot otomatis
 
-### Premium Partners
+### Inventori & POS
+- Manajemen stok/inventori real-time
+- Cetak barcode produk di modul POS
+- Kelola gudang, pembelian, order POS, dan transaksi
+- Diskon produk POS & laporan stok terbaru
+- Preview gambar upload
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Akuntansi
+- Modul double entry: chart of accounts, jurnal, ledger, neraca, laba rugi, trial balance
+- Laporan keuangan otomatis untuk transparansi & akurasi
 
-## Contributing
+### CRM & Pengalaman Pelanggan
+- Manajemen lead, deal, dan laporan untuk memperkuat relasi
+- Penetapan goal dan catatan bisnis, lampirkan file pendukung
+- Form builder dengan iframe embed untuk integrasi eksternal
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Penyimpanan Cloud & Integrasi
+- Integrasi penyimpanan cloud: Local, AWS, Wasabi
+- Integrasi Slack, Zoom, Telegram, Twilio
+- Sinkronisasi Google Calendar untuk meeting, event, jadwal interview
 
-## Code of Conduct
+### Keamanan & Kepatuhan
+- Dukungan GDPR cookie consent
+- reCaptcha pada halaman login dan reset password
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Kustomisasi
+- RTL support untuk bahasa Arab & Ibrani
+- Theme customizer: warna, sidebar, layout transparan/gelap
+- Pengaturan bisnis, sistem & cetak
+- Webhook untuk konektivitas antar modul
+- Integrasi AI untuk produktivitas cerdas
 
-## Security Vulnerabilities
+### Pembayaran & Internasionalisasi
+- Dukungan multi-bahasa
+- 30+ gateway pembayaran: Stripe, PayPal, Paystack, Flutterwave, Razorpay, Paytm, Mollie, Skrill, Mercado Pago, CoinGate, Paymentwall, toyyibPay, PayFast, SSPay, IyziPay, PayTabs, Benefits, Cashfree, aamarPay, Yookassa, Midtrans, Xendit, dan lainnya
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 📦 Ringkasan Modul
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Dashboard:** Ringkasan bisnis real-time
+- **HRM:** Manajemen karyawan secara menyeluruh
+- **Proyek & Tugas:** Organisasi, penugasan, dan pelacakan kerja
+- **Inventori:** Manajemen stok, barcode, dan gudang
+- **POS:** Penjualan cepat, diskon, dan barcode printing
+- **Akuntansi:** Sistem double entry, laporan akurat
+- **CRM:** Lead, deal, dan pengelolaan klien
+- **Integrasi:** Slack, Zoom, Telegram, Twilio, Cloud Storage, Google Calendar
+- **Kustomisasi:** Form builder, tema, pengaturan cetak & bisnis
+
+---
+
+## 💡 Kenapa Pilih NOJ POS?
+
+- **Modern & Intuitif:** Dibangun dengan Laravel 11, cepat dan aman
+- **Fleksibel:** Cocok untuk retail, jasa, dan bisnis berbasis proyek
+- **Terintegrasi:** Semua fitur bisnis dalam satu platform
+- **Aman & Patuh:** GDPR, reCaptcha, tanda tangan digital
+- **Ekstensibel:** API kuat & dukungan webhook
+
+---
+
+## 📑 Cara Instalasi
+
+1. **Clone repository:**  
+   `git clone https://github.com/rayhanvito/KasirPOS.git`
+2. **Install dependencies:**  
+   `composer install && npm install`
+3. **Konfigurasi environment:**  
+   Salin `.env.example` ke `.env` dan sesuaikan pengaturan Anda
+4. **Jalankan migrasi database:**  
+   `php artisan migrate --seed`
+5. **Mulai server pengembangan:**  
+   `php artisan serve`
+6. **Akses NOJ POS:**  
+   Buka `http://localhost:8000` di browser Anda
+
+---
+
+## 📚 Dokumentasi & Bantuan
+
+- [Dokumentasi Resmi](#) (segera hadir)
+- [Changelog](#) untuk pembaruan
+- Untuk masalah, pertanyaan, atau saran, gunakan [Support](#).  
+  *Mohon tidak meminta bantuan di kolom komentar agar respon lebih cepat.*
+
+---
+
+## 🧑‍💻 Kontribusi
+
+Kami membuka kontribusi untuk NOJ POS! Silakan baca [Panduan Kontribusi](#) sebelum mengirimkan perubahan.
+
+---
+
+## 🛡️ Lisensi
+
+NOJ POS adalah open source dengan lisensi [MIT](https://opensource.org/licenses/MIT).
+
+---
+
+## 🙏 Acknowledgement
+
+Dibangun menggunakan [Laravel](https://laravel.com/) dan terinspirasi dari ERPGo.
+
+---
+
+> **NOJ POS** - Solusi lengkap untuk manajemen bisnis, penjualan, dan proyek Anda.
